@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starbucks Landing Page Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="circle"></div>
+      <header>
+        <a href="#"><img src="image/logo.png" alt="" class="logo" /></a>
+        <ul>
+          <li class="links"><a href="#">Home</a></li>
+          <li class="links"><a href="#">Menu</a></li>
+          <li class="links"><a href="#">What's New</a></li>
+          <li class="links"><a href="#">Contact</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textBox">
+          <h2 class="typing">
+            It's not just Coffee <br />
+            <span class="typ"></span>
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptatum, quibusdam, quos, voluptate voluptas quia quod
+            exercitationem quae voluptatibus quas doloribus. Quisquam
+            voluptatum, quibusdam, quos, voluptate voluptas quia quod
+            exercitationem quae voluptatibus quas doloribus.
+          </p>
+          <a href="#" class="btn"> Learn More</a>
+        </div>
+      </div>
+      <div class="imgBox">
+        <img src="image/img1.png" alt="" class="starbucks" />
+      </div>
+      <ul class="thumb">
+        <li>
+          <img
+            src="image/thumb1.png"
+            alt=""
+            class="glass"
+            onclick="imgSlider('image/img1.png');changeCircleColor('#017143')"
+          />
+        </li>
+        <li>
+          <img
+            src="image/thumb2.png"
+            alt=""
+            class="glass"
+            onclick="imgSlider('image/img2.png');changeCircleColor('#eb7495')"
+          />
+        </li>
+        <li>
+          <img
+            src="image/thumb3.png"
+            alt=""
+            class="glass"
+            onclick="imgSlider('image/img3.png');changeCircleColor('#d752b1')"
+          />
+        </li>
+      </ul>
+      <ul class="sci">
+        <li>
+          <a href="#">
+            <img src="image/facebook.png" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="image/instagram.png" alt="" />
+          </a>
+        </li>
+      </ul>
+    </section>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="app.js"></script>
+    <script>
+      var typed = new Typed(".typ", {
+        strings: ["StarBucks", "It's Starbucks"],
+        typeSpeed: 70,
+        backSpeed: 65,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
